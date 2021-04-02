@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     // Get the location from UI
     let loc = document.querySelector('#location').value;
     // Fetch the data from APIs.
-    fetch('http://localhost:3000/weather?address=' + loc)
+    fetch('/weather?address=' + loc)
         .then(res => res.json())
         .then(res => {
             if (res.error) {

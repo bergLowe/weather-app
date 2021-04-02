@@ -19,6 +19,10 @@ partials: These files are part of bigger file, that is some repetitive part of f
 */
 
 const app = express();
+// port here gets port_value from deployed system if depolyed,
+// otherwise on local machine it uses 3000.
+const port = process.env.PORT || 3000;
+
 // publicDirectoryPath points to the static files.
 const publicDirectoryPath = path.join(__dirname, '../public');
 // viewsPath points to the custom views folder that will be set to view engine.
@@ -111,6 +115,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Server is on port 3000");
+app.listen(port, () => {
+    console.log("Server is on port " + port + ".");
 })
