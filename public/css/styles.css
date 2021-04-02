@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+}
+
+body {
+    color: #BB86FC;
+    font-family: 'Libre Baskerville', 'serif';
+    max-width: 700px;
+    margin: 0 auto; /*Centering the body*/
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.main-content .info {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.main-content input {
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    outline: none;
+}
+
+.main-content ::placeholder {
+    color: rgb(153, 149, 149);
+}
+
+.main-content button {
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.main-content button:hover {
+    background: rgb(245, 245, 245);
+    color: black;
+}
+
+.main-content .about {
+    margin-top: 10px;
+    color: rgb(235, 223, 223);
+    font-size: 17px;
+    line-height: 40px;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+ 
+header h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 5px;
+    color: #6a00ff;
+    font-size: 20px;
+}
+
+h1 {
+    color: #c493ff;
+}
+
+.active {
+    border-bottom: 2px #721fe6 solid;
+    padding-bottom: 5px;
+}
+
+footer {
+    border-top: 1px solid #03DAC6;
+    margin-top: 20px;
+    padding: 30px 0;
+    color: #03DAC6;
+}
+
+.aboutDarth {
+    width: 200px;
+}
+
+.msg {
+    background-color: #BB86FC;
+    font-size: 18px;
+    margin: 10px;
+    color: #000;
+    border: 1px solid #BB86FC;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: fit-content;
+}
+
+.msg-error {
+    background-color: #CF6679;
+    font-size: 18px;
+    margin: 10px;
+    color: #000;
+    border: 1px solid #CF6679;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: fit-content;
+}
+
+.msg-loading {
+    background-color: rgb(245, 245, 245);
+    font-size: 18px;
+    margin: 10px;
+    color: #121212;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 8px;
+    padding: 5px;
+    max-width: fit-content;
+}
+
+.kenobi {
+    position: relative;
+    left: 40%;
+}
+
+.faq {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.list {
+    font-size: 16px;
+    color: whitesmoke;
+    margin-left: 40px;
+}
+
+.list li {
+    margin-top: 15px;
+}
+
+.list a {
+    color: rgb(132, 220, 255);
+}
+
+.tyvisit {
+    font-size: 20px;
+    margin: 50px 40px;
+}
+
+.err {
+    font-size: 45px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
