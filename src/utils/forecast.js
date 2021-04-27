@@ -1,8 +1,7 @@
 const axios = require("axios");
-const key = require("./api_key");
 
 const forecast = (lat, long, callback) => {
-    let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key.w_key}&units=metric`;
+    let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${process.env.OWA_API_KEY}&units=metric`;
 
     axios.get(url)
         .then(({ data }) => {

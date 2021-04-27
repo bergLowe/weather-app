@@ -1,8 +1,7 @@
 const axios = require("axios")
-const key = require("./api_key");
 
 const geoLocation = (location, callback) => {
-    let url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(location)}.json?access_token=${key.m_key}&limit=1`;
+    let url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(location)}.json?access_token=${process.env.MB_API_KEY}&limit=1`;
 
     axios.get(url)
         .then(({ data }) => {
